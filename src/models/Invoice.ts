@@ -10,12 +10,14 @@ import { Document, Model, Schema, UpdateQuery, model } from 'mongoose';
  * @property {number} price - The price of the item.
  * @property {number} total - The total cost of the item (quantity * price).
  */
+
 interface IItem {
   name: string;
   quantity: number;
   price: number;
   total: number;
 }
+
 
 /**
  * Interface for the address subdocument.

@@ -7,6 +7,9 @@ import { Invoice, IInvoice } from '../../models/Invoice';
  * Joi schema for validating draft invoice data.
  * Defines a relaxed structure with optional fields for creating draft invoices.
  */
+
+
+
 export const addDraftInvoiceSchema = Joi.object().keys({
   paymentTerms: Joi.number(),
   description: Joi.string(),

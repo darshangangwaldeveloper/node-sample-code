@@ -7,7 +7,7 @@ const result = dotenv.config();
 if (result.error) {
   dotenv.config({ path: '.env' });
 }
-
+console.log("object")
 const mongoConnection = new MongoConnection(process.env.MONGO_URL);
 console.log("object")
 if (process.env.MONGO_URL == null) {

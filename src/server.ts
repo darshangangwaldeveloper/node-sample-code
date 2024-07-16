@@ -7,9 +7,8 @@ const result = dotenv.config();
 if (result.error) {
   dotenv.config({ path: '.env' });
 }
-console.log("object")
 const mongoConnection = new MongoConnection(process.env.MONGO_URL);
-console.log("object")
+
 if (process.env.MONGO_URL == null) {
   logger.log({
     level: 'error',
@@ -27,6 +26,7 @@ if (process.env.MONGO_URL == null) {
   });
 }
 
+console.log("object")
 // Close the Mongoose connection, when receiving SIGINT
 process.on('SIGINT', async () => {
   logger.info('Gracefully shutting down');

@@ -8,7 +8,7 @@ mongoose.Promise = globalThis.Promise;
 interface IOnConnectedCallback {
   (): void;
 }
-
+console.log("object")
 /**
  * A Mongoose Connection wrapper class to
  * help with mongo connection issues.

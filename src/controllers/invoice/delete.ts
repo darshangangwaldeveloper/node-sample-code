@@ -14,6 +14,7 @@ const deleteWrapper: RequestHandler = async (req, res) => {
   console.log(id)
   console.log(id)
   console.log(id)
+  console.log(id)
  
 
 

@@ -12,6 +12,7 @@ const deleteWrapper: RequestHandler = async (req, res) => {
   const { id } = req.params;
   
   console.log(id)
+  console.log(id)
   // Validate if the provided ID is a valid MongoDB ObjectId 
   console.log(id)
  
